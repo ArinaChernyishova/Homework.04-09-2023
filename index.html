@@ -3,19 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Доставка!</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="main">
-        <ul class="ul">
-            <li> <a href="#"></a>Главная</li>
+        <ul>
+            <li style="color: rgb(255, 98, 0);"> <a href="#"></a>Акции</li>
             <li><a href="#"></a>Меню</li>
-            <li><a href="#"></a>Доставка</li>
-            <li><a href="#"></a>Самовывоз</li>
+            <li>Магазины</li>
+            <li><a href="#"></a>Франшиза</li>
+            <li><a href="#"></a>Вакансии</li>
         </ul>
     </div>
+    
 
+    
 
     <div id="form">
         <form class="form">
@@ -23,34 +26,33 @@
             <h1 class="form_title">Оформление заказа</h1>
     
             <div class="form_group" >
-                <input class="form_input" placeholder="">
+                <input type="text" class="form_input" placeholder="" required >
                 <lable class="form_lable">Имя</lable>
             </div>
     
             <div class="form_group" >
-                <input class="form_input" placeholder="">
+                <input type="text" class="form_input" placeholder="" required >
                 <lable class="form_lable">Адрес</lable>
             </div>
     
             <div class="form_group" >
-                <input class="form_input" placeholder="" type="tel">
+                <input class="form_input" placeholder="" type="tel" required >
                 <lable class="form_lable">Телефон</lable>
             </div>
     
             <div class="form_group" >
-                <input class="form_input" placeholder="">
+                <input type="email" class="form_input" placeholder="" required >
                 <lable class="form_lable">Email</lable>
             </div>
     
             <div class="form_group" >
-                <input class="form_input" placeholder="">
+                <input type="number" class="form_input" placeholder="" required >
                 <lable class="form_lable">Количество палочек</lable>
             </div>
     
             <div class="form_group" >
-                <input class="form_input" placeholder="">
+                <input style="border: none;" class="form_input" placeholder="">
                 <lable class="form_lable">Вид палочек</lable>
-                <!-- Добавить стили для списка -->
                 <div class="form_select_wrapper">
                     <select class="form_selest">
                         <option>Обычные</option>
@@ -61,9 +63,8 @@
             </div>
     
             <div class="form_group" >
-                <input class="form_input" placeholder="">
+                <input style="border: none;" class="form_input" placeholder="">
                 <lable class="form_lable">Выбирите суши</lable>
-                <!-- Добавить стили для списка -->
                 <div class="form_select_wrapper"></div>
                     <select class="form_selest">
                         <option>Ролл «Филадельфия»</option>
@@ -74,9 +75,8 @@
                     </select>
                 </div>
                 <div class="form_group" >
-                    <input class="form_input" placeholder="">
+                    <input style="border: none;" class="form_input" placeholder="">
                     <lable class="form_lable">Нужно ли класть салфетки?</lable>
-                        <!-- Добавить стили для списка -->
                     <div class="form_select_wrapper">    
                         <select class="form_selest">
                             <option>Да</option>
@@ -87,8 +87,8 @@
         
                 <div class="form_group" >
                     <input class="form_input" placeholder="">
-                    <lable class="form_lable">Дополнительный комментарий</lable>
-                    <button class="form_button">Войти</button>
+                    <lable class="form_lable">Дополнительный комментарий<span style="color: rgb(255, 98, 0);">*</span></lable>
+                    <button type="submit" class="form_button">Заказать!</button>
                 </div>
                 
             </form>
